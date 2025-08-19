@@ -9,7 +9,7 @@
     cursor: pointer;
     transition: border-color 0.25s;
 
-    padding: 0 20px
+    padding: 0 20px;
 }
 
 .btn:disabled {

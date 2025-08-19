@@ -4,14 +4,27 @@
     justify-content: space-between;
 }
 
-.inputContainer input {
+
+.input {
     width: 150px;
     border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    /*border: 2px solid var(--error-color);*/
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    outline: none;
+}
+
+.inputError {
+    width: 150px;
+    border: 2px solid var(--error-color);
+    background-color: var(--error-background-color);
     border-radius: 5px;
     text-align: center;
     font-weight: 700;
     font-size: 1em;
-
+    outline: none;
 }
 
 .inputContainer label {

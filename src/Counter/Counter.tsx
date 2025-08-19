@@ -5,16 +5,31 @@ import type {ErrorCounter} from "../App.tsx";
 
 export type Props = {
     count: number
+    settingMode: boolean
+    settingModeError: ErrorCounter
     errorCounter: ErrorCounter
     increaseCounter: () => void
     resetCounter: () => void
 }
 
 
-export const Counter = ({count, errorCounter, increaseCounter, resetCounter}: Props) => {
+export const Counter = (
+    {
+        count,
+        errorCounter,
+        increaseCounter,
+        resetCounter,
+        settingMode,
+        settingModeError
+    }: Props) => {
     return (
         <div className={cn.container}>
-            <DisplayCounter count={count} errorCounter={errorCounter}/>
+            <DisplayCounter
+                count={count}
+                errorCounter={errorCounter}
+                settingMode={settingMode}
+                settingModeError={settingModeError}
+            />
             <div className={cn.btnArea}>
                 <Button text='inc' callback={increaseCounter} errorCounter={errorCounter}/>
                 <Button text='reset' callback={resetCounter}/>
