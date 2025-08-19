@@ -2,7 +2,7 @@
     border-radius: var(--main-radius);
     border: 1px solid transparent;
     color: #242424;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     font-family: inherit;
     background-color: var(--accent-color);
@@ -10,4 +10,8 @@
     transition: border-color 0.25s;
 
     padding: 0 20px
+}
+
+.btn:disabled {
+    opacity: 0.4;
 }

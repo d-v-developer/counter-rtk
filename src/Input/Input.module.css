@@ -1,0 +1,21 @@
+.inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputContainer input {
+    width: 150px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.inputContainer label {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.5em;
+}

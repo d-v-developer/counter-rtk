@@ -1,0 +1,15 @@
+.container {
+
+    border: 2px solid var(--accent-color);
+    border-radius: var(--main-radius);
+
+    box-sizing: border-box;
+
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
