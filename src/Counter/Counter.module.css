@@ -1,0 +1,21 @@
+.container {
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid var(--accent-color);
+    border-radius: var(--main-radius);
+
+}
+
+.btnArea {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+    border: 2px solid var(--accent-color);
+    border-radius: var(--main-radius);
+    margin-top: 10px;
+    padding: 10px;
+}
