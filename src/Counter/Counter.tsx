@@ -31,8 +31,8 @@ export const Counter = (
                 settingModeError={settingModeError}
             />
             <div className={cn.btnArea}>
-                <Button text='inc' callback={increaseCounter} errorCounter={errorCounter}/>
-                <Button text='reset' callback={resetCounter}/>
+                <Button text='inc' callback={increaseCounter} errorCounter={errorCounter || settingMode}/>
+                <Button text='reset' callback={resetCounter} errorCounter={settingMode}/>
             </div>
         </div>
     );
