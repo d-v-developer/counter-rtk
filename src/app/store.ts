@@ -1,9 +1,11 @@
 // создание store
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import {counterReducer} from "../model/counter-reducer.ts";
+import {settingsReducer} from "../model/settings-reducer.ts";
 
 const rootReducer = combineReducers({
     counter: counterReducer,
+    settings: settingsReducer,
 })
 
 export const store = configureStore({

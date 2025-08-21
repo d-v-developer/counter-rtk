@@ -9,6 +9,7 @@ type initialState = {
 }
 
 export const incrementAC = createAction("counter/increment");
+export const resetAC = createAction("counter/reset");
 
 const initialState: initialState = {
     count: 0,
@@ -24,10 +25,12 @@ export const counterReducer = createReducer(initialState, builder => {
                 state.error = true
             }
             state.count++
+        })
+        .addCase(resetAC, state => {
+            state.count = state.startValue;
+            state.error = null;
 
-            // if (count >= settings.maxValue - 1) {
-            //     setErrorCounter(true);
-            // }
-            // setCount(count + 1);
+            // setCount(settings.startValue)
+            // setErrorCounter(null);
         })
 })
