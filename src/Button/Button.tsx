@@ -1,5 +1,5 @@
 import cn from './Button.module.css'
-import type {ErrorCounter} from "../App.tsx";
+import type {ErrorCounter} from "../app/App.tsx";
 
 export type Props = {
     text: string

@@ -1,6 +1,6 @@
 import {DisplaySettings} from "./DisplaySettings/DisplaySettings.tsx";
 import {Button} from "../Button/Button.tsx";
-import type {ErrorCounter, SettingsType} from "../App.tsx";
+import type {ErrorCounter, SettingsType} from "../app/App.tsx";
 
 import cn from './Settings.module.css'
 

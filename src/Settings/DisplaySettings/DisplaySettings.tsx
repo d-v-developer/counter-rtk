@@ -1,5 +1,5 @@
 import {Input} from "../../Input/Input.tsx";
-import type {ErrorCounter, SettingsType} from "../../App.tsx";
+import type {ErrorCounter, SettingsType} from "../../app/App.tsx";
 import cn from './DisplaySettings.module.css'
 
 export type Props = {

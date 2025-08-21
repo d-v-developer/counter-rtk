@@ -1,7 +1,7 @@
 import {DisplayCounter} from "./DisplayCounter/DisplayCounter.tsx";
 import {Button} from "../Button/Button.tsx";
 import cn from './Counter.module.css'
-import type {ErrorCounter} from "../App.tsx";
+import type {ErrorCounter} from "../app/App.tsx";
 
 export type Props = {
     count: number

@@ -1,6 +1,6 @@
 import cn from './Input.module.css'
 import {type ChangeEvent, useState} from "react";
-import type {ErrorCounter} from "../App.tsx";
+import type {ErrorCounter} from "../app/App.tsx";
 
 export type Props = {
     labelText: string

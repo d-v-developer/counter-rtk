@@ -1,5 +1,5 @@
 import cn from './DisplayCounter.module.css'
-import type {ErrorCounter} from "../../App.tsx";
+import type {ErrorCounter} from "../../app/App.tsx";
 
 export type Props = {
     count: number
@@ -34,7 +34,7 @@ export const DisplayCounter = (
                     {count}
                 </span>
             }
-            {!settingMode && <span>{count}</span>}
+            {/*{!settingMode && <span>{count}</span>}*/}
             {/*<span className={*/}
             {/*    errorCounter ?*/}
             {/*        cn.spanError : settingMode ?*/}
